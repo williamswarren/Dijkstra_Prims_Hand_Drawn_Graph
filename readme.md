@@ -8,7 +8,6 @@
 
 ## Sample Output
 
-![Graph](./graphviz_images/adjacency_list.png)
 ![Digital Graph](./graphviz_images/Graph_graphviz.png)
 ![Shortest Path](./graphviz_images/SP_graphviz.png)
 ![MST](./graphviz_images/MST_graphviz.png)
