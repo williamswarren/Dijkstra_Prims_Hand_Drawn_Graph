@@ -15,19 +15,20 @@
 ### Outline
 
 
-Module 1 -- Image Reader
+Module 1 >>> Image Reader
 
 
-            |>>> Get Vertex
-            |
-Module 2 -- |>>> Get Edge + Weight
-            |
-            |>>> Get Connections
+         >>> Get Vertex
+         
+Module 2 >>> Get Edge + Weight
+         
+         >>> Get Connections
             
 
-            |>>> Prims
-Module 3 -- |
-			|>>> MST
+         >>> Prims
+Module 3
+	     >>> MST
+
 
 #### Steps To Run Current Code/Results
 
