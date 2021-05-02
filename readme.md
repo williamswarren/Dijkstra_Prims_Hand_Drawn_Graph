@@ -18,17 +18,16 @@
 Module 1 -- Image Reader
 
 
-             _ _ Get Vertex
+            |>>> Get Vertex
             |
-            |_ _ Get Edge + Weight
-Module 2 ---|
-            |_ _ Get Connections
+Module 2 -- |>>> Get Edge + Weight
+            |
+            |>>> Get Connections
             
 
-             _ _ Prims
+            |>>> Prims
 Module 3 -- |
-            |
-			|_ _ MST
+			|>>> MST
 
 #### Steps To Run Current Code/Results
 
