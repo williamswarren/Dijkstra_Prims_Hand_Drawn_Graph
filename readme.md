@@ -12,5 +12,38 @@
 ![Shortest Path](./graphviz_images/SP_graphviz.png)
 ![MST](./graphviz_images/MST_graphviz.png)
 
-**Libraries used so far - OpenCV (will update and add requirements.txt accordingly)**
+### Outline
 
+
+Module 1 -- Image Reader
+
+
+             _ _ Get Vertex
+            |
+            |_ _ Get Edge + Weight
+Module 2 ---|
+            |_ _ Get Connections
+            
+
+             _ _ Prims
+Module 3 -- |
+            |
+			|_ _ MST
+
+#### Steps To Run Current Code/Results
+
+1. git clone https://github.com/williamswarren/Dijkstra_Prims_Hand_Drawn_Graph.git
+
+2. cd Dijkstra_Prims_Hand_Drawn_Graph/research
+
+3. source opencv-venv/bin/activate
+
+4. cd scripts
+
+5. python3 BFS_Nodes_With_Color.py > results.txt
+
+6. cat results.txt
+
+Try opening an editor of your choice and playing with the different input graph files found at Dijkstra_Prims_Hand_Drawn_Graph/graphviz_images --> Nodes_With_Color{1..7}.png (Currently #3 is not showing the correct results)
+
+More to come! 
