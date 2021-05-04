@@ -41,8 +41,9 @@ visited_pixels_set = set()
 
 def vertice_edge_finder(filepath):
 	image = cv.imread(filepath)
-	for i in range(image.shape[0]):
-		for j in range(image.shape[1]):
+	# CR hkumar for wwililams: xrange always, you can google why.
+	for i in xrange(image.shape[0]):
+		for j in xrange(image.shape[1]):
 			#print("INSIDE MAIN IMAGE LOOP")
 			if (i, j) in visited_pixels_set:
 				continue
