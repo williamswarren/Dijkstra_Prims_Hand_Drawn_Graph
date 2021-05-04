@@ -168,4 +168,7 @@ if __name__ == "__main__":
 	filepath = "../../graphviz_images/Nodes_With_Color1.png"
 	vertice_edge_finder(filepath)
 	print("WE FOUND NODES WITH THIS RELATIONSHIP: ", adjacency_list)
+	# CR hkumar for wwilliams: We have a library to print graphs, 
+	# In addition to the above print statement, 
+	# why don't you also create an image of [adjacency_list] and save it in say [result_graph.png]
 	print("FINISHED") 
