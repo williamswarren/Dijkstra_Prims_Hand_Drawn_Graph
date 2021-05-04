@@ -129,6 +129,8 @@ def BFS(location, color, image):
 		#print("DID NOT FIND A BLACK NODE, CONTINUE BFS")	
 		#IF WE DID NOT FIND A BLACK PIXEL IN 6*6 MATRIX WE CONTINUE THE BFS ON THE NODE
 		#MANY IF'S BECAUSE THE TRANSITION FROM 1 COLOR PIXEL TO THE NEXT IS NOT LINEAR AND GRAPHVIZ GIVES MANY SHADES OF E.G. A RED PIXEL WHICH IS VERY ANNOYING
+
+		# CR hkumar for wwiliams: This seems really hacky, any way to photoshop the graph to have the pixel structure we desire?
 		
 		if tuple(image[curr[0]-1][curr[1]]) == COLORS_BGR[color] and (curr[0]-1, curr[1]) not in visited_pixels_set:
 			queue.append((curr[0]-1, curr[1]))
