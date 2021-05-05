@@ -47,7 +47,8 @@ def vertice_edge_finder(filepath):
 			#print("INSIDE MAIN IMAGE LOOP")
 			if (i, j) in visited_pixels_set:
 				continue
-			visited_pixels_set.add((i, j))
+			# CR hkumar for hkumar: I think we don't need to add the px to visited here, reason about it more. 
+			#visited_pixels_set.add((i, j))
 			#WE FOUND A NODE
 			if tuple(image[i][j]) in COLORS_SET_BGR and (tuple(image[i][j]) != COLORS_BGR["white"] and tuple(image[i][j]) != COLORS_BGR["black"]):
 				for color in COLORS_BGR.keys():
