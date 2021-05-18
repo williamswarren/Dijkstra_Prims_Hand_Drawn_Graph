@@ -1,0 +1,18 @@
+graph "Processed Graph" {
+	G [color=green]
+	E [color=pink]
+	D [color=brown]
+	F [color=yellow]
+	B [color=blue]
+	A [color=red]
+	C [color=purple]
+	G -- E
+	G -- D
+	G -- F
+	E -- B
+	E -- C
+	D -- A
+	F -- B
+	B -- C
+	A -- C
+}

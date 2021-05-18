@@ -1,8 +1,8 @@
-import graph_processing
+from graph_processing import *
 
 class Graph_Manager():
 	def __init__(self, file):
-		self.graph_object = self.Graph_Processing(file)
+		self.graph_object = Graph_Processing(file)
 
 	def show_original_image(self):
 		self.graph_object.display_original()
@@ -12,15 +12,20 @@ class Graph_Manager():
 
 	def process_graph(self):
 		self.graph_object.process()
+		self.graph_object.create_bound_box_weights()
 
-	def show_sp(self):
-		self.graph_object.display_sp()
+	def update_weights(self):
+		self.graph_object.update_weights()
 
-	def show_mst(self):
-		self.graph_object.display_mst()
+	def compute_sp_mst(self):
+		self.graph_object.get_sp()
+		self.graph_object.get_mst()
 
-	def get_adj_list(self):
-		self.graph_object.get_adjacency_list()
+	def create_graphviz(self):
+		self.graph_object.create_graphviz_no_weights()
+		self.graph_object.create_graphviz_with_weights()
+		self.graph_object.create_graphviz_sp()
+		self.graph_object.create_graphviz_mst()
 
 	def save_images(self):
 		self.graph_object.save_graphs()
