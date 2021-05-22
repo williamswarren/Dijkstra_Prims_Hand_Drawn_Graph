@@ -1,0 +1,7 @@
+graph "Processed Weighted Graph" {
+	A [color=red]
+	B [color=blue]
+	C [color=purple]
+	A -- B [label=2]
+	B -- C [label=1]
+}
