@@ -296,9 +296,9 @@ class Graph_Processing():
 					if len(self.colors_bgr) >= 1:
 						color = self.colors_bgr.pop(0)
 						print(color)
-						cv.circle(self.processed_image,(i[0],i[1]),i[2],color,10)
+						cv.circle(self.processed_image,(i[0],i[1]),i[2],color,40)
 					else:
-						cv.circle(self.processed_image,(i[0],i[1]),i[2],(255, 255, 200),10)
+						cv.circle(self.processed_image,(i[0],i[1]),i[2],(255, 255, 200),40)
 
 			#DRAW CENTRE OF CIRCLE
 			#cv.circle(cimg,(i[0],i[1]),2,(0,0,255),3)
@@ -388,6 +388,7 @@ class Graph_Processing():
 				
 				
 		def BFS(location, color, image):
+			print(color)
 			adjacent_nodes = []
 			queue = deque([location])
 			while queue:
@@ -415,6 +416,7 @@ class Graph_Processing():
 										curr_pixel = tuple(image[white_row][white_col])
 										if curr_pixel in COLORS_DICT_BGR and curr_pixel != WHITE and curr_pixel != BLACK and curr_pixel != COLORS_BGR[color]:
 											adjacent_nodes.append(image[white_row][white_col])
+											#print("We found", COLORS_DICT_BGR[curr_pixel])
 											appended_node = True
 											break
 										elif curr_pixel == WHITE and (white_row, white_col) not in visited_pixels_set:
@@ -426,6 +428,7 @@ class Graph_Processing():
 					for node_col in range(curr[1]-2, curr[1]+3):
 						if tuple(image[node_row][node_col]) in COLORS_DICT_BGR:
 							if COLORS_DICT_BGR[tuple(image[node_row][node_col])][0] == color and (node_row, node_col) not in visited_pixels_set:
+								#print("BFS", color, node_row, node_col)
 								queue.append((node_row, node_col))
 			#print(adjacent_nodes)
 			return adjacent_nodes
