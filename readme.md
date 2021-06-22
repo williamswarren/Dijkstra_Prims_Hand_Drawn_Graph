@@ -1,55 +1,58 @@
-# Dijkstras & Prims MST On A Hand-Drawn Graph
+# Hand Drawn Graph Interpreter
 
-*The purpose of this project is to take a hand drawn graph on scratch paper and use computer vision to interpret the various vertices, edges and associated weights*
+*The purpose of this project is to take a hand drawn graph on scratch paper and use computer vision to interpret the various vertices and edges*
 
 ## Sample Input
 
-![Hand Drawn Graph](./graphviz_images/test_graph.png)
+![Hand Drawn Graph](./graphviz_images/example-images/precise_graph4.png)
 
 ## Sample Output
 
-![Digital Graph](./graphviz_images/Graph_graphviz.png)
-![Shortest Path](./graphviz_images/SP_graphviz.png)
-![MST](./graphviz_images/MST_graphviz.png)
+![Processed Graph](./main/output_images/test_output/processed-image.png)
+![Graphviz Graph](./main/output_images/test_output/processed-graph.png)
+![Node & Weight Detection](./main/output_images/test_output/processed_with_weights.png)
 
 ### Outline
 
+GOOD TO KNOW
 
-Module 1
+* Please only use graphs drawn on blank white paper
+* For now only works on graph with a maximum of 7 nodes 
 
-* Image Reader
+If run as a script, use Option 2 below
+
+Otherwise import graph_manager and instantiate Graph_Manager, pass in file/image you want to work with (IMAGE MUST BE IN PNG FORMAT)
 
 
-Module 2
+## Coming Soon To A Github Repo Near You...
 
-* Get Vertex
-         
-* Get Edge + Weight
-         
-*  Get Connections
-
-            
-Module 3
-
-* Prims
-
-* MST
+Edge Weight Detector & Dijkstra's SP & Prims MST 
 
 
 #### Steps To Run Current Code/Results
 
-1. git clone https://github.com/williamswarren/Dijkstra_Prims_Hand_Drawn_Graph.git
+### OPTION 1: 
 
-2. cd Dijkstra_Prims_Hand_Drawn_Graph/research
+GO TO THIS LINK TO TRY WEB VERSION -> 
 
-3. source opencv-venv/bin/activate
 
-4. cd scripts
+### OPTION 2:
 
-5. python3 BFS_Nodes_With_Color.py > results.txt
+git clone https://github.com/williamswarren/GraphMonkey
 
-6. cat results.txt
+cd GraphMonkey
 
-Try opening an editor of your choice and playing with the different input graph files found at Dijkstra_Prims_Hand_Drawn_Graph/graphviz_images --> Nodes_With_Color{1..7}.png (Currently #3 is not showing the correct results)
+python3 -m venv virtualenv
 
-More to come! 
+source virtualenv/bin/activate
+
+pip3 install -r requirements.txt
+
+cd main
+
+python3 main.py 'PASS IN YOUR IMAGE HERE'
+
+processed graphs will be in **output_images** directory
+
+
+

@@ -6,11 +6,11 @@ import sys
 def main(file_path):
 	print("PROCESSING")
 	manager = Graph_Manager(file_path)
-	manager.show_original_image()
+	#manager.show_original_image()
 	manager.process_graph()
-	manager.show_processed_image()
-	manager.update_weights()
-	manager.compute_sp_mst()
+	#manager.show_processed_image()
+	#manager.update_weights()
+	#manager.compute_sp_mst()
 	manager.create_graphviz()
 	manager.save_images()
 	del manager

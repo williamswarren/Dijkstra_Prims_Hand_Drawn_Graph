@@ -30,9 +30,9 @@ class Graph_Manager():
 
 	def create_graphviz(self):
 		self.graph_object.create_graphviz_no_weights()
-		self.graph_object.create_graphviz_with_weights()
-		self.graph_object.create_graphviz_sp()
-		self.graph_object.create_graphviz_mst()
+		#self.graph_object.create_graphviz_with_weights()
+		#self.graph_object.create_graphviz_sp()
+		#self.graph_object.create_graphviz_mst()
 
 	def save_images(self):
 		self.graph_object.save_graphs()

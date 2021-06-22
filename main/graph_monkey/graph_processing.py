@@ -165,15 +165,16 @@ class Graph_Processing():
 		directory = os.path.dirname(path)
 		directory = directory + "/output_images"
 		self.graphviz_original.draw(directory + "/processed-graph.png", prog="dot")
-		self.graphviz_weights.draw(directory + "/processed-graph-weights.png", prog="dot")
-		self.graphviz_sp.draw(directory + "/processed-graph-sp.png", prog="dot")
-		self.graphviz_mst.draw(directory + "/processed-graph-mst.png", prog="dot")
+		#self.graphviz_weights.draw(directory + "/processed-graph-weights.png", prog="dot")
+		#self.graphviz_sp.draw(directory + "/processed-graph-sp.png", prog="dot")
+		#self.graphviz_mst.draw(directory + "/processed-graph-mst.png", prog="dot")
 		cv.imwrite(directory + "/processed-image.png", self.processed_image)
-		try:
-			if self.processed_image_weights == None:
-				pass
-		except:		
-			cv.imwrite(directory + "/processed-image-weights.png", self.processed_image_weights)
+		cv.imwrite(directory + "/processed_with_weights.png", self.processed_image_weights)
+		#try:
+			#if self.processed_image_weights == None:
+				#pass
+		#except:		
+			#cv.imwrite(directory + "/processed-image-weights.png", self.processed_image_weights)
 
 
 	def get_mst(self):
