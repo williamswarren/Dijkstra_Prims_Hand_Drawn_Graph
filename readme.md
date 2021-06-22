@@ -29,7 +29,7 @@ Otherwise import graph_manager and instantiate Graph_Manager, pass in file/image
 Edge Weight Detector & Dijkstra's SP & Prims MST 
 
 
-#### Steps To Run Current Code/Results
+## Steps To Run Current Code/Results
 
 ### OPTION 1: 
 
