@@ -4,7 +4,7 @@
 
 ## Sample Input
 
-![Hand Drawn Graph](./graphviz_images/example-images/precise_graph4.png)
+![Hand Drawn Graph](./main/graphviz_images/example-images/precise_graph4.png)
 
 ## Sample Output
 
