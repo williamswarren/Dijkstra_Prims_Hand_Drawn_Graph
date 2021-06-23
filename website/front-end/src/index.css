@@ -1,0 +1,71 @@
+h {
+	font-size: 50pt;
+    font-family: Phosphate;
+    color: #ffd11a;
+	display: flex;
+	justify-content: center;
+}
+
+label {
+	font-size: 50pt;
+	font-family: Phosphate;
+    color: #ffd11a;
+	display: flex;
+	justify-content: center;
+	position: absolute;
+	top: 100%;
+	left: 20%;
+	margin: -25px 0 0 -25px; /* apply negative top and left margins to truly center the element */ 
+}
+
+input {
+  opacity: 0;
+}
+
+body {
+	background-color: #0099ff;
+}
+
+.image {
+	display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 35%;
+    left: 42%;
+    margin: -25px 0 0 -25px; /* apply negative top and left margins to truly center the element */
+}
+
+
+.row {
+  display: flex !important;
+  justify-content: center;
+  position: absolute;
+  top: 35%;
+}
+
+.column {
+  flex: 33.33%;
+  padding: 80px;
+  margin: 0 0 0 80px;
+}
+
+a {
+  font-size: 30pt;
+  font-family: Phosphate;
+  color: #ffd11a;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  top: 90%;
+  flex: 30% !important;
+  padding: 0px !important;
+  
+}
+
+p {
+	font-size: 25pt;
+	font-family: Phosphate;
+	color: #ffd11a;
+	justify-content: center;
+	display: flex;
+}

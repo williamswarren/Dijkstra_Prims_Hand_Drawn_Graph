@@ -1,0 +1,4 @@
+  126  sudo apt install python3-pip
+  140  sudo apt install python-pip
+  145  sudo apt-get install python3-opencv
+  146  sudo apt-get install graphviz graphviz-dev

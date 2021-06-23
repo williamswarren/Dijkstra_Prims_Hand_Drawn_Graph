@@ -2,6 +2,9 @@
 
 *The purpose of this project is to take a hand drawn graph on scratch paper and use computer vision to interpret the various vertices and edges*
 
+![UI](./main/graphviz_images/example-images/monkey_ui.png)
+
+
 ## Sample Input
 
 ![Hand Drawn Graph](./main/graphviz_images/example-images/precise_graph4.png)
@@ -33,7 +36,7 @@ Edge Weight Detector & Dijkstra's SP & Prims MST
 
 ### OPTION 1: 
 
-GO TO THIS LINK TO TRY WEB VERSION -> 
+GO TO THIS LINK TO TRY WEB VERSION -> [GRAPHMONKEY](http://graphmonkey.s3-website-us-west-1.amazonaws.com/)
 
 
 ### OPTION 2:
